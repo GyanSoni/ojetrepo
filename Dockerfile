@@ -30,3 +30,5 @@ RUN export ANDROID_HOME=${ANDROID_HOME}
 
 RUN npm install -g @oracle/ojet-cli
 RUN npm install -g cordova
+
+COPY . .
