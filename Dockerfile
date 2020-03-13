@@ -1,6 +1,7 @@
-FROM gerardgm/oldojet-android
+FROM node:current-slim
 
 WORKDIR /usr/src/app
+
 # COPY phantomjs-2.1.1-linux-x86_64.tar.bz2 /tmp/phantomjs/
 COPY package*.json ./
 
