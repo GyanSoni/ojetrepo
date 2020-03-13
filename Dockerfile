@@ -4,7 +4,8 @@ WORKDIR /usr/src/app
 
 # COPY phantomjs-2.1.1-linux-x86_64.tar.bz2 /tmp/phantomjs/
 COPY package*.json ./
-
+RUN apt-get update
+RUN apt-get install bzip2
 RUN npm config set registry https://registry.npmjs.com/
 RUN npm install
 
