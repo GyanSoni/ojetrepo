@@ -1,4 +1,4 @@
-FROM node:current-slim
+FROM jtidocker/jticellular
 
 WORKDIR /usr/src/app
 
@@ -8,6 +8,7 @@ RUN apt-get update
 RUN apt-get install bzip2
 RUN npm config set registry https://registry.npmjs.com/
 RUN npm install
+RUN npm install -g @oracle/ojet-cli cordova
 
 # If you are building your code for production
 # RUN npm ci --only=production
